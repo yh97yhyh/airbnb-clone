@@ -18,6 +18,10 @@
 		F8B6E5202B6BD53E00772BA2 /* ListingImageCarouselView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8B6E51F2B6BD53E00772BA2 /* ListingImageCarouselView.swift */; };
 		F8B6E5222B6BEE0700772BA2 /* ReserveBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8B6E5212B6BEE0700772BA2 /* ReserveBar.swift */; };
 		F8B6E5242B6BF18C00772BA2 /* DestinationSearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8B6E5232B6BF18C00772BA2 /* DestinationSearchView.swift */; };
+		F8B6E5262B6BFD2000772BA2 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8B6E5252B6BFD2000772BA2 /* ProfileView.swift */; };
+		F8B6E5282B6BFE1E00772BA2 /* ProfileOptionRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8B6E5272B6BFE1E00772BA2 /* ProfileOptionRowView.swift */; };
+		F8B6E52A2B6BFEEA00772BA2 /* WishlistView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8B6E5292B6BFEEA00772BA2 /* WishlistView.swift */; };
+		F8B6E52C2B6C003200772BA2 /* MainTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8B6E52B2B6C003200772BA2 /* MainTabView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,6 +37,10 @@
 		F8B6E51F2B6BD53E00772BA2 /* ListingImageCarouselView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListingImageCarouselView.swift; sourceTree = "<group>"; };
 		F8B6E5212B6BEE0700772BA2 /* ReserveBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReserveBar.swift; sourceTree = "<group>"; };
 		F8B6E5232B6BF18C00772BA2 /* DestinationSearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DestinationSearchView.swift; sourceTree = "<group>"; };
+		F8B6E5252B6BFD2000772BA2 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
+		F8B6E5272B6BFE1E00772BA2 /* ProfileOptionRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileOptionRowView.swift; sourceTree = "<group>"; };
+		F8B6E5292B6BFEEA00772BA2 /* WishlistView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WishlistView.swift; sourceTree = "<group>"; };
+		F8B6E52B2B6C003200772BA2 /* MainTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -166,6 +174,7 @@
 		F8B6E5132B6BCB8000772BA2 /* TabBar */ = {
 			isa = PBXGroup;
 			children = (
+				F8B6E52B2B6C003200772BA2 /* MainTabView.swift */,
 			);
 			path = TabBar;
 			sourceTree = "<group>";
@@ -173,6 +182,7 @@
 		F8B6E5142B6BCB8800772BA2 /* WishLists */ = {
 			isa = PBXGroup;
 			children = (
+				F8B6E5292B6BFEEA00772BA2 /* WishlistView.swift */,
 			);
 			path = WishLists;
 			sourceTree = "<group>";
@@ -180,6 +190,8 @@
 		F8B6E5152B6BCBC800772BA2 /* Profile */ = {
 			isa = PBXGroup;
 			children = (
+				F8B6E5252B6BFD2000772BA2 /* ProfileView.swift */,
+				F8B6E5272B6BFE1E00772BA2 /* ProfileOptionRowView.swift */,
 			);
 			path = Profile;
 			sourceTree = "<group>";
@@ -263,10 +275,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				F8B6E5202B6BD53E00772BA2 /* ListingImageCarouselView.swift in Sources */,
+				F8B6E5282B6BFE1E00772BA2 /* ProfileOptionRowView.swift in Sources */,
 				F8B6E4FF2B6BCAC100772BA2 /* ContentView.swift in Sources */,
+				F8B6E5262B6BFD2000772BA2 /* ProfileView.swift in Sources */,
 				F8B6E5192B6BCD6E00772BA2 /* ListingItemView.swift in Sources */,
 				F8B6E5172B6BCC5E00772BA2 /* ExploreView.swift in Sources */,
 				F8B6E5222B6BEE0700772BA2 /* ReserveBar.swift in Sources */,
+				F8B6E52C2B6C003200772BA2 /* MainTabView.swift in Sources */,
+				F8B6E52A2B6BFEEA00772BA2 /* WishlistView.swift in Sources */,
 				F8B6E5242B6BF18C00772BA2 /* DestinationSearchView.swift in Sources */,
 				F8B6E51B2B6BD20F00772BA2 /* SearchAndFilterBar.swift in Sources */,
 				F8B6E51D2B6BD4BB00772BA2 /* ListingDetailView.swift in Sources */,
