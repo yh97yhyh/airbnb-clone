@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct ListingView: View {
+struct ListingItemView: View {
     
     var images = [
         "listing-1",
@@ -18,17 +18,11 @@ struct ListingView: View {
     
     var body: some View {
         VStack(spacing: 8) {
+            
             // images
-            TabView {
-                ForEach(images, id: \.self) { image in
-                    Image(image)
-                        .resizable()
-                        .scaledToFill()
-                }
-            }
-            .frame(height: 320)
-            .clipShape(RoundedRectangle(cornerRadius: 10))
-            .tabViewStyle(.page)
+            ListingImageCarouselView()
+                .frame(height: 320)
+                .clipShape(RoundedRectangle(cornerRadius: 10))
             
             // listing details
             HStack(alignment: .top) {
@@ -36,6 +30,7 @@ struct ListingView: View {
                 VStack(alignment: .leading) {
                     Text("Miami, Florida")
                         .fontWeight(.semibold)
+                        .foregroundStyle(.black)
                     
                     Text("12 min away")
                         .foregroundColor(.gray)
@@ -47,8 +42,8 @@ struct ListingView: View {
                         Text("$567")
                             .fontWeight(.semibold)
                         Text("night")
-                        
                     }
+                    .foregroundStyle(.black)
                 }
                 
                 Spacer()
@@ -56,8 +51,10 @@ struct ListingView: View {
                 // rating
                 HStack(spacing: 2) {
                     Image(systemName: "star.fill")
+                    
                     Text("4.86")
                 }
+                .foregroundStyle(.black)
             }
             .font(.footnote)
         }
@@ -67,6 +64,6 @@ struct ListingView: View {
 
 struct ListingView_Previews: PreviewProvider {
     static var previews: some View {
-        ListingView()
+        ListingItemView()
     }
 }

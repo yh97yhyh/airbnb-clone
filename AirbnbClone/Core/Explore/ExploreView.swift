@@ -15,11 +15,17 @@ struct ExploreView: View {
                 
                 LazyVStack(spacing: 32) {
                     ForEach(0...10, id: \.self) { listing in
-                        ListingView()
-                            .frame(height: 400)
-                            .clipShape(RoundedRectangle(cornerRadius: 10))
+                        NavigationLink(value: listing) {
+                            ListingItemView()
+                                .frame(height: 400)
+                                .clipShape(RoundedRectangle(cornerRadius: 10))
+                        }
                     }
                 }
+            }
+            .navigationDestination(for: Int.self) { listing in
+                ListingDetailView()
+                    .navigationBarBackButtonHidden()
             }
         }
     }
