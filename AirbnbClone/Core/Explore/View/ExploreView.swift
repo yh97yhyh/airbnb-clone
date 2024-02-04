@@ -25,16 +25,6 @@ struct ExploreView: View {
                             }
                         }
                     
-//                    LazyVStack(spacing: 32) {
-//                        ForEach(0...10, id: \.self) { listing in
-//                            NavigationLink(value: listing) {
-//                                ListingItemView()
-//                                    .frame(height: 400)
-//                                    .clipShape(RoundedRectangle(cornerRadius: 10))
-//                            }
-//                        }
-//                    }
-                    
                     LazyVStack(spacing: 32) {
                         ForEach(viewModel.listings) { listing in
                             NavigationLink(value: listing) {

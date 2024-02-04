@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F8A82A062B7005A600675E11 /* Regions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8A82A052B7005A600675E11 /* Regions.swift */; };
 		F8B6E4FD2B6BCAC100772BA2 /* AirbnbCloneApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8B6E4FC2B6BCAC100772BA2 /* AirbnbCloneApp.swift */; };
 		F8B6E4FF2B6BCAC100772BA2 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8B6E4FE2B6BCAC100772BA2 /* ContentView.swift */; };
 		F8B6E5012B6BCAC400772BA2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F8B6E5002B6BCAC400772BA2 /* Assets.xcassets */; };
@@ -26,10 +27,10 @@
 		F8BB45EB2B6FE09A004BD5B4 /* DeveloperPreview.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8BB45EA2B6FE09A004BD5B4 /* DeveloperPreview.swift */; };
 		F8BB45F02B6FE321004BD5B4 /* ExploreViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8BB45EF2B6FE321004BD5B4 /* ExploreViewModel.swift */; };
 		F8BB45F22B6FE34D004BD5B4 /* ExploreService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8BB45F12B6FE34D004BD5B4 /* ExploreService.swift */; };
-		F8BB45F62B6FEB66004BD5B4 /* CustomMapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8BB45F52B6FEB66004BD5B4 /* CustomMapView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		F8A82A052B7005A600675E11 /* Regions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Regions.swift; sourceTree = "<group>"; };
 		F8B6E4F92B6BCAC100772BA2 /* AirbnbClone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AirbnbClone.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F8B6E4FC2B6BCAC100772BA2 /* AirbnbCloneApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AirbnbCloneApp.swift; sourceTree = "<group>"; };
 		F8B6E4FE2B6BCAC100772BA2 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -50,7 +51,6 @@
 		F8BB45EA2B6FE09A004BD5B4 /* DeveloperPreview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeveloperPreview.swift; sourceTree = "<group>"; };
 		F8BB45EF2B6FE321004BD5B4 /* ExploreViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExploreViewModel.swift; sourceTree = "<group>"; };
 		F8BB45F12B6FE34D004BD5B4 /* ExploreService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExploreService.swift; sourceTree = "<group>"; };
-		F8BB45F52B6FEB66004BD5B4 /* CustomMapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomMapView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -130,6 +130,7 @@
 			isa = PBXGroup;
 			children = (
 				F8BB45EA2B6FE09A004BD5B4 /* DeveloperPreview.swift */,
+				F8A82A052B7005A600675E11 /* Regions.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -228,7 +229,6 @@
 				F8B6E5182B6BCD6E00772BA2 /* ListingItemView.swift */,
 				F8B6E51C2B6BD4BB00772BA2 /* ListingDetailView.swift */,
 				F8B6E5212B6BEE0700772BA2 /* ReserveBar.swift */,
-				F8BB45F52B6FEB66004BD5B4 /* CustomMapView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -335,7 +335,6 @@
 				F8BB45F22B6FE34D004BD5B4 /* ExploreService.swift in Sources */,
 				F8B6E5262B6BFD2000772BA2 /* ProfileView.swift in Sources */,
 				F8B6E5192B6BCD6E00772BA2 /* ListingItemView.swift in Sources */,
-				F8BB45F62B6FEB66004BD5B4 /* CustomMapView.swift in Sources */,
 				F8BB45EB2B6FE09A004BD5B4 /* DeveloperPreview.swift in Sources */,
 				F8B6E5172B6BCC5E00772BA2 /* ExploreView.swift in Sources */,
 				F8B6E5222B6BEE0700772BA2 /* ReserveBar.swift in Sources */,
@@ -345,6 +344,7 @@
 				F8B6E5242B6BF18C00772BA2 /* DestinationSearchView.swift in Sources */,
 				F8BB45F02B6FE321004BD5B4 /* ExploreViewModel.swift in Sources */,
 				F8B6E51B2B6BD20F00772BA2 /* SearchAndFilterBar.swift in Sources */,
+				F8A82A062B7005A600675E11 /* Regions.swift in Sources */,
 				F8B6E51D2B6BD4BB00772BA2 /* ListingDetailView.swift in Sources */,
 				F8B6E4FD2B6BCAC100772BA2 /* AirbnbCloneApp.swift in Sources */,
 			);
@@ -483,6 +483,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -512,6 +513,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
