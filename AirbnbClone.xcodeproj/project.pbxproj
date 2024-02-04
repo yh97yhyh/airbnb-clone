@@ -24,6 +24,9 @@
 		F8B6E52C2B6C003200772BA2 /* MainTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8B6E52B2B6C003200772BA2 /* MainTabView.swift */; };
 		F8BB45E92B6FDD4C004BD5B4 /* Listing.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8BB45E82B6FDD4C004BD5B4 /* Listing.swift */; };
 		F8BB45EB2B6FE09A004BD5B4 /* DeveloperPreview.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8BB45EA2B6FE09A004BD5B4 /* DeveloperPreview.swift */; };
+		F8BB45F02B6FE321004BD5B4 /* ExploreViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8BB45EF2B6FE321004BD5B4 /* ExploreViewModel.swift */; };
+		F8BB45F22B6FE34D004BD5B4 /* ExploreService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8BB45F12B6FE34D004BD5B4 /* ExploreService.swift */; };
+		F8BB45F62B6FEB66004BD5B4 /* CustomMapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8BB45F52B6FEB66004BD5B4 /* CustomMapView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -45,6 +48,9 @@
 		F8B6E52B2B6C003200772BA2 /* MainTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabView.swift; sourceTree = "<group>"; };
 		F8BB45E82B6FDD4C004BD5B4 /* Listing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Listing.swift; sourceTree = "<group>"; };
 		F8BB45EA2B6FE09A004BD5B4 /* DeveloperPreview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeveloperPreview.swift; sourceTree = "<group>"; };
+		F8BB45EF2B6FE321004BD5B4 /* ExploreViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExploreViewModel.swift; sourceTree = "<group>"; };
+		F8BB45F12B6FE34D004BD5B4 /* ExploreService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExploreService.swift; sourceTree = "<group>"; };
+		F8BB45F52B6FEB66004BD5B4 /* CustomMapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomMapView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -145,9 +151,9 @@
 		F8B6E50F2B6BCB5A00772BA2 /* Explore */ = {
 			isa = PBXGroup;
 			children = (
-				F8B6E5162B6BCC5E00772BA2 /* ExploreView.swift */,
-				F8B6E51A2B6BD20F00772BA2 /* SearchAndFilterBar.swift */,
-				F8B6E5232B6BF18C00772BA2 /* DestinationSearchView.swift */,
+				F8BB45EE2B6FE2FB004BD5B4 /* Service */,
+				F8BB45ED2B6FE2F5004BD5B4 /* View */,
+				F8BB45EC2B6FE2F2004BD5B4 /* ViewModel */,
 			);
 			path = Explore;
 			sourceTree = "<group>";
@@ -222,8 +228,35 @@
 				F8B6E5182B6BCD6E00772BA2 /* ListingItemView.swift */,
 				F8B6E51C2B6BD4BB00772BA2 /* ListingDetailView.swift */,
 				F8B6E5212B6BEE0700772BA2 /* ReserveBar.swift */,
+				F8BB45F52B6FEB66004BD5B4 /* CustomMapView.swift */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		F8BB45EC2B6FE2F2004BD5B4 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				F8BB45EF2B6FE321004BD5B4 /* ExploreViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		F8BB45ED2B6FE2F5004BD5B4 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				F8B6E5162B6BCC5E00772BA2 /* ExploreView.swift */,
+				F8B6E51A2B6BD20F00772BA2 /* SearchAndFilterBar.swift */,
+				F8B6E5232B6BF18C00772BA2 /* DestinationSearchView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		F8BB45EE2B6FE2FB004BD5B4 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				F8BB45F12B6FE34D004BD5B4 /* ExploreService.swift */,
+			);
+			path = Service;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -299,8 +332,10 @@
 				F8B6E5202B6BD53E00772BA2 /* ListingImageCarouselView.swift in Sources */,
 				F8B6E5282B6BFE1E00772BA2 /* ProfileOptionRowView.swift in Sources */,
 				F8B6E4FF2B6BCAC100772BA2 /* ContentView.swift in Sources */,
+				F8BB45F22B6FE34D004BD5B4 /* ExploreService.swift in Sources */,
 				F8B6E5262B6BFD2000772BA2 /* ProfileView.swift in Sources */,
 				F8B6E5192B6BCD6E00772BA2 /* ListingItemView.swift in Sources */,
+				F8BB45F62B6FEB66004BD5B4 /* CustomMapView.swift in Sources */,
 				F8BB45EB2B6FE09A004BD5B4 /* DeveloperPreview.swift in Sources */,
 				F8B6E5172B6BCC5E00772BA2 /* ExploreView.swift in Sources */,
 				F8B6E5222B6BEE0700772BA2 /* ReserveBar.swift in Sources */,
@@ -308,6 +343,7 @@
 				F8BB45E92B6FDD4C004BD5B4 /* Listing.swift in Sources */,
 				F8B6E52A2B6BFEEA00772BA2 /* WishlistView.swift in Sources */,
 				F8B6E5242B6BF18C00772BA2 /* DestinationSearchView.swift in Sources */,
+				F8BB45F02B6FE321004BD5B4 /* ExploreViewModel.swift in Sources */,
 				F8B6E51B2B6BD20F00772BA2 /* SearchAndFilterBar.swift in Sources */,
 				F8B6E51D2B6BD4BB00772BA2 /* ListingDetailView.swift in Sources */,
 				F8B6E4FD2B6BCAC100772BA2 /* AirbnbCloneApp.swift in Sources */,

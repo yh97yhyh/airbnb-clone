@@ -8,6 +8,8 @@
 import SwiftUI
 
 struct ReserveBar: View {
+    let listing: Listing
+    
     var body: some View {
         VStack {
             Divider()
@@ -15,7 +17,7 @@ struct ReserveBar: View {
             
             HStack {
                 VStack(alignment: .leading) {
-                    Text("$500")
+                    Text("$\(listing.pricePerNight)")
                         .font(.subheadline)
                         .fontWeight(.semibold)
                     
@@ -50,6 +52,6 @@ struct ReserveBar: View {
 
 struct ReserveBar_Previews: PreviewProvider {
     static var previews: some View {
-        ReserveBar()
+        ReserveBar(listing: DeveloperPreview.shared.listing[0])
     }
 }
