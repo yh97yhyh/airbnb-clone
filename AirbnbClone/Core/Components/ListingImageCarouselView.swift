@@ -27,3 +27,4 @@ struct ListingImageCarouselView_Previews: PreviewProvider {
         ListingImageCarouselView(listing: DeveloperPreview.shared.listing[0])
     }
 }
+
